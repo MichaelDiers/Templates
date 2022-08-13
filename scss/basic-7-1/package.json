@@ -1,0 +1,28 @@
+{
+  "name": "basic-7-1",
+  "version": "1.0.0",
+  "description": "basic template for scss",
+  "main": "index.js",
+  "scripts": {    
+    "build": "npm run sass:client.css && npm run sass:client.min.css",
+    "sass": "npx sass --stop-on-error --no-source-map ./main.scss",
+    "sass:client.css": "npm run sass -- ./build/client.css",
+    "sass:client.min.css": "npm run sass -- ./build/client.min.css --style=compressed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelDiers/Templates.git"
+  },
+  "keywords": [
+    "scss",
+    "template",
+    "7-1 pattern"
+  ],
+  "author": "Michael Diers",
+  "license": "MIT",
+  "homepage": "https://github.com/MichaelDiers/Templates#readme",
+  "dependencies": {
+    "sass": "^1.54.4"
+  }
+}
