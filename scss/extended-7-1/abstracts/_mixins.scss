@@ -10,7 +10,7 @@
   .#{$name} {
     background-color: $overlay-color;
     bottom: 0;
-    cursor: $cursor;
+    display: none;
     left: 0;
     opacity: 0;
     position: absolute;
@@ -34,7 +34,9 @@
     z-index: $z-index + 1;
   }
   
-  .#{$name}.show {
+  .#{$name}.show {    
+    cursor: $cursor;
+    display: block;
     opacity: 1;
   }
   
