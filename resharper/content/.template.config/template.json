@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Michael Diers",
+    "classifications": [ "Config" ],
+    "identity": "Resharper.Configuration",
+    "name": "Add a custom resharper configuration.",
+    "shortName": "resharper",
+    "tags": {
+      "language": "C#",
+      "type": "item"
+    },
+    "symbols": {
+      "ConfigurationName":{
+        "type": "parameter",
+        "description": "The name of the configuration file.",
+        "datatype": "text",
+        "fileRename": "Solution.sln.DotSettings",
+        "defaultValue": "Solution.sln.DotSettings"
+      }
+    }
+  }
